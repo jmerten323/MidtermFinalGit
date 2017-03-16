@@ -60,9 +60,9 @@ public class Ball : MonoBehaviour
         gameOverSign.SetActive(true);
     }
 
-    public void YouBrokeABrick()
+    public void YouBrokeABrick(int worth)
     {
-        points += 1;
+        points += worth;
         pointsValue.text = points.ToString();
         bricks--;
         if (bricks == 0)
